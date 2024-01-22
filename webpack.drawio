@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-01-21T16:44:34.648Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0" etag="lO-KtjtZIuj8M9Gjzmzu" version="22.1.18" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-22T15:57:18.481Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0" etag="nMY8Jq7DdymN8R3ubuCJ" version="22.1.18" type="github">
   <diagram name="第 1 页" id="MVrE7ZpOwZZvy0ujSv35">
     <mxGraphModel dx="859" dy="586" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -356,20 +356,17 @@
           <mxGeometry x="540" y="1420" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="wv2YPF_jsLJIBkKBlA4p-13" value="buildChunkGraph" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="245" y="1610" width="470" height="860" as="geometry" />
+          <mxGeometry x="245" y="1610" width="470" height="1170" as="geometry" />
         </mxCell>
         <mxCell id="wv2YPF_jsLJIBkKBlA4p-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="wv2YPF_jsLJIBkKBlA4p-13" source="wv2YPF_jsLJIBkKBlA4p-25" target="wv2YPF_jsLJIBkKBlA4p-28">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="wv2YPF_jsLJIBkKBlA4p-25" value="visitModules" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="wv2YPF_jsLJIBkKBlA4p-13">
-          <mxGeometry x="30" y="60" width="410" height="650" as="geometry" />
+          <mxGeometry x="30" y="60" width="410" height="970" as="geometry" />
         </mxCell>
-        <mxCell id="wv2YPF_jsLJIBkKBlA4p-80" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="wv2YPF_jsLJIBkKBlA4p-25" source="wv2YPF_jsLJIBkKBlA4p-26" target="wv2YPF_jsLJIBkKBlA4p-79">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="wv2YPF_jsLJIBkKBlA4p-81" value="pop" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="wv2YPF_jsLJIBkKBlA4p-80">
-          <mxGeometry x="-0.1429" y="-1" relative="1" as="geometry">
-            <mxPoint as="offset" />
+        <mxCell id="wv2YPF_jsLJIBkKBlA4p-92" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="wv2YPF_jsLJIBkKBlA4p-25" source="wv2YPF_jsLJIBkKBlA4p-26" target="wv2YPF_jsLJIBkKBlA4p-101">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="205" y="360" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="wv2YPF_jsLJIBkKBlA4p-26" value="queue" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="wv2YPF_jsLJIBkKBlA4p-25">
@@ -410,17 +407,36 @@
         <mxCell id="wv2YPF_jsLJIBkKBlA4p-78" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="wv2YPF_jsLJIBkKBlA4p-25" source="wv2YPF_jsLJIBkKBlA4p-71" target="wv2YPF_jsLJIBkKBlA4p-58">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="wv2YPF_jsLJIBkKBlA4p-83" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="wv2YPF_jsLJIBkKBlA4p-25" source="wv2YPF_jsLJIBkKBlA4p-79" target="wv2YPF_jsLJIBkKBlA4p-82">
+        <mxCell id="wv2YPF_jsLJIBkKBlA4p-101" value="processQueue" style="swimlane;" vertex="1" parent="wv2YPF_jsLJIBkKBlA4p-25">
+          <mxGeometry x="35" y="350" width="345" height="480" as="geometry" />
+        </mxCell>
+        <mxCell id="wv2YPF_jsLJIBkKBlA4p-104" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="wv2YPF_jsLJIBkKBlA4p-101" source="wv2YPF_jsLJIBkKBlA4p-102" target="wv2YPF_jsLJIBkKBlA4p-103">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="wv2YPF_jsLJIBkKBlA4p-79" value="processBlock" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="wv2YPF_jsLJIBkKBlA4p-25">
-          <mxGeometry x="198" y="350" width="108" height="40" as="geometry" />
+        <mxCell id="wv2YPF_jsLJIBkKBlA4p-102" value="while(queue)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="wv2YPF_jsLJIBkKBlA4p-101">
+          <mxGeometry x="127.5" y="40" width="90" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="wv2YPF_jsLJIBkKBlA4p-82" value="getBlockModules&lt;br&gt;获取block引用的modules" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="wv2YPF_jsLJIBkKBlA4p-25">
-          <mxGeometry x="192" y="420" width="120" height="50" as="geometry" />
+        <mxCell id="wv2YPF_jsLJIBkKBlA4p-106" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="wv2YPF_jsLJIBkKBlA4p-101" source="wv2YPF_jsLJIBkKBlA4p-103" target="wv2YPF_jsLJIBkKBlA4p-112">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="165" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wv2YPF_jsLJIBkKBlA4p-107" value="PROCESS_BLOCK" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="wv2YPF_jsLJIBkKBlA4p-106">
+          <mxGeometry x="-0.12" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wv2YPF_jsLJIBkKBlA4p-103" value="action" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="wv2YPF_jsLJIBkKBlA4p-101">
+          <mxGeometry x="140" y="100" width="65" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wv2YPF_jsLJIBkKBlA4p-112" value="processBlock" style="swimlane;" vertex="1" parent="wv2YPF_jsLJIBkKBlA4p-101">
+          <mxGeometry x="12.5" y="200" width="320" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="wv2YPF_jsLJIBkKBlA4p-82" value="getBlockModules:&lt;br&gt;返回block的依赖(Module | ConnectionState)[]" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="wv2YPF_jsLJIBkKBlA4p-112">
+          <mxGeometry x="30" y="40" width="250" height="50" as="geometry" />
         </mxCell>
         <mxCell id="wv2YPF_jsLJIBkKBlA4p-28" value="connectChunkGroups" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="wv2YPF_jsLJIBkKBlA4p-13">
-          <mxGeometry x="135" y="728" width="200" height="110" as="geometry" />
+          <mxGeometry x="135" y="1060" width="200" height="110" as="geometry" />
         </mxCell>
         <mxCell id="wv2YPF_jsLJIBkKBlA4p-29" value="dep" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="wv2YPF_jsLJIBkKBlA4p-28">
           <mxGeometry x="20" y="50" width="70" height="40" as="geometry" />
