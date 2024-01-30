@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-01-30T02:52:29.258Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.6 Safari/605.1.15" etag="XxrWSX8YThc6F8wEK-6u" version="22.1.21" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-30T12:17:35.578Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.6 Safari/605.1.15" etag="TjVZ3CVwbG5E4gW3rwhk" version="22.1.21" type="github">
   <diagram name="第 1 页" id="MVrE7ZpOwZZvy0ujSv35">
     <mxGraphModel dx="972" dy="691" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -454,6 +454,21 @@
         <mxCell id="IKmlM9FXXomiaoNc1RVJ-6" value="create async chunk group" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="IKmlM9FXXomiaoNc1RVJ-1">
           <mxGeometry x="45" y="40" width="190" height="40" as="geometry" />
         </mxCell>
+        <mxCell id="IKmlM9FXXomiaoNc1RVJ-13" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;curved=0;rounded=0;endSize=8;startSize=8;dashed=1;dashPattern=8 8;" edge="1" parent="wv2YPF_jsLJIBkKBlA4p-112" source="wv2YPF_jsLJIBkKBlA4p-113" target="wv2YPF_jsLJIBkKBlA4p-112">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="309.99" y="260" as="sourcePoint" />
+            <mxPoint x="258.99" y="-200" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="580" y="260" />
+              <mxPoint x="580" y="20" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IKmlM9FXXomiaoNc1RVJ-16" value="不活跃的直接处理依赖" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="IKmlM9FXXomiaoNc1RVJ-13">
+          <mxGeometry x="0.4385" relative="1" as="geometry">
+            <mxPoint x="-89" as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="wv2YPF_jsLJIBkKBlA4p-136" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="wv2YPF_jsLJIBkKBlA4p-25" source="wv2YPF_jsLJIBkKBlA4p-120" target="wv2YPF_jsLJIBkKBlA4p-134" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -491,9 +506,14 @@
             <mxPoint x="695" y="973" as="sourcePoint" />
             <mxPoint x="865.01" y="580" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="875" y="1250" />
-              <mxPoint x="875" y="790" />
+              <mxPoint x="995" y="1250" />
+              <mxPoint x="995" y="790" />
             </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IKmlM9FXXomiaoNc1RVJ-17" value="活跃的先添加到chunk中再处理依赖" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="IKmlM9FXXomiaoNc1RVJ-11">
+          <mxGeometry x="0.148" relative="1" as="geometry">
+            <mxPoint x="-110" y="-124" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="wv2YPF_jsLJIBkKBlA4p-28" value="connectChunkGroups" style="swimlane;whiteSpace=wrap;html=1;" parent="wv2YPF_jsLJIBkKBlA4p-13" vertex="1">
