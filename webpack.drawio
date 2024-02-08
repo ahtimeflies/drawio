@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-02-05T12:07:04.758Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.6 Safari/605.1.15" etag="19ffJRUscvNY-zaMUDxF" version="22.1.21" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-08T10:08:08.615Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.6 Safari/605.1.15" etag="Qf5jNKhyre8W-1pTC9sn" version="22.1.21" type="github">
   <diagram name="第 1 页" id="MVrE7ZpOwZZvy0ujSv35">
     <mxGraphModel dx="826" dy="644" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -585,25 +585,28 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="W6BC3XzCuo4GsSZScxcd-3" value="processChunkGroupsForCombining" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="wv2YPF_jsLJIBkKBlA4p-25">
-          <mxGeometry x="82.5" y="2440" width="250" height="120" as="geometry" />
+          <mxGeometry x="47.5" y="2440" width="320" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="W6BC3XzCuo4GsSZScxcd-4" value="处理dependOn" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="W6BC3XzCuo4GsSZScxcd-3">
-          <mxGeometry x="72.5" y="60" width="100" height="30" as="geometry" />
+        <mxCell id="W6BC3XzCuo4GsSZScxcd-18" value="计算设置了dependOn属性的入口chunkgroup的minAvailableModules" style="whiteSpace=wrap;html=1;" vertex="1" parent="W6BC3XzCuo4GsSZScxcd-3">
+          <mxGeometry x="30" y="50" width="260" height="60" as="geometry" />
         </mxCell>
         <mxCell id="W6BC3XzCuo4GsSZScxcd-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="wv2YPF_jsLJIBkKBlA4p-25" source="W6BC3XzCuo4GsSZScxcd-5" target="W6BC3XzCuo4GsSZScxcd-8">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="W6BC3XzCuo4GsSZScxcd-5" value="processConnectQueue" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="wv2YPF_jsLJIBkKBlA4p-25">
-          <mxGeometry x="48.75" y="2620" width="317.5" height="120" as="geometry" />
+          <mxGeometry x="35" y="2620" width="343.75" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="W6BC3XzCuo4GsSZScxcd-6" value="处理异步chunk group与父 chunk group关系" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="W6BC3XzCuo4GsSZScxcd-5">
-          <mxGeometry x="33.75" y="60" width="250" height="30" as="geometry" />
+        <mxCell id="W6BC3XzCuo4GsSZScxcd-17" value="计算异步chunk group的resultingAvailableModules以供下一步使用" style="whiteSpace=wrap;html=1;" vertex="1" parent="W6BC3XzCuo4GsSZScxcd-5">
+          <mxGeometry x="40" y="40" width="260" height="60" as="geometry" />
         </mxCell>
         <mxCell id="W6BC3XzCuo4GsSZScxcd-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="wv2YPF_jsLJIBkKBlA4p-25" source="W6BC3XzCuo4GsSZScxcd-8" target="W6BC3XzCuo4GsSZScxcd-11">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="W6BC3XzCuo4GsSZScxcd-8" value="processChunkGroupsForMerging" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="wv2YPF_jsLJIBkKBlA4p-25">
           <mxGeometry x="48.75" y="2790" width="317.5" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="W6BC3XzCuo4GsSZScxcd-20" value="计算异步chunk group的minAvailableModules" style="whiteSpace=wrap;html=1;" vertex="1" parent="W6BC3XzCuo4GsSZScxcd-8">
+          <mxGeometry x="28.75" y="40" width="260" height="60" as="geometry" />
         </mxCell>
         <mxCell id="W6BC3XzCuo4GsSZScxcd-11" value="processOutdatedChunkGroupInfo" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="wv2YPF_jsLJIBkKBlA4p-25">
           <mxGeometry x="48.75" y="2990" width="317.5" height="120" as="geometry" />
