@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-02-08T10:08:08.615Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.6 Safari/605.1.15" etag="Qf5jNKhyre8W-1pTC9sn" version="22.1.21" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-12T15:00:47.189Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0" etag="xohyBhkIY8qKTGQjzqi7" version="22.1.18" type="github">
   <diagram name="第 1 页" id="MVrE7ZpOwZZvy0ujSv35">
-    <mxGraphModel dx="826" dy="644" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="859" dy="586" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -396,13 +396,15 @@
         <mxCell id="wv2YPF_jsLJIBkKBlA4p-78" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="wv2YPF_jsLJIBkKBlA4p-25" source="wv2YPF_jsLJIBkKBlA4p-71" target="wv2YPF_jsLJIBkKBlA4p-58" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="W6BC3XzCuo4GsSZScxcd-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="wv2YPF_jsLJIBkKBlA4p-25" source="wv2YPF_jsLJIBkKBlA4p-101" target="W6BC3XzCuo4GsSZScxcd-3">
+        <mxCell id="W6BC3XzCuo4GsSZScxcd-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="wv2YPF_jsLJIBkKBlA4p-25" source="wv2YPF_jsLJIBkKBlA4p-101" target="W6BC3XzCuo4GsSZScxcd-3" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="207.5999999999999" y="2450" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="wv2YPF_jsLJIBkKBlA4p-101" value="processQueue" style="swimlane;" parent="wv2YPF_jsLJIBkKBlA4p-25" vertex="1">
-          <mxGeometry x="35" y="480" width="345" height="1910" as="geometry" />
+          <mxGeometry x="35" y="480" width="345" height="1910" as="geometry">
+            <mxRectangle x="35" y="480" width="120" height="30" as="alternateBounds" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="wv2YPF_jsLJIBkKBlA4p-104" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="wv2YPF_jsLJIBkKBlA4p-101" source="wv2YPF_jsLJIBkKBlA4p-102" target="wv2YPF_jsLJIBkKBlA4p-125" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -581,35 +583,44 @@
             <mxPoint x="605" y="2243" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="W6BC3XzCuo4GsSZScxcd-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="wv2YPF_jsLJIBkKBlA4p-25" source="W6BC3XzCuo4GsSZScxcd-3" target="W6BC3XzCuo4GsSZScxcd-5">
+        <mxCell id="W6BC3XzCuo4GsSZScxcd-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="wv2YPF_jsLJIBkKBlA4p-25" source="W6BC3XzCuo4GsSZScxcd-3" target="W6BC3XzCuo4GsSZScxcd-5" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="W6BC3XzCuo4GsSZScxcd-3" value="processChunkGroupsForCombining" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="wv2YPF_jsLJIBkKBlA4p-25">
+        <mxCell id="W6BC3XzCuo4GsSZScxcd-3" value="processChunkGroupsForCombining" style="swimlane;whiteSpace=wrap;html=1;" parent="wv2YPF_jsLJIBkKBlA4p-25" vertex="1">
           <mxGeometry x="47.5" y="2440" width="320" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="W6BC3XzCuo4GsSZScxcd-18" value="计算设置了dependOn属性的入口chunkgroup的minAvailableModules" style="whiteSpace=wrap;html=1;" vertex="1" parent="W6BC3XzCuo4GsSZScxcd-3">
-          <mxGeometry x="30" y="50" width="260" height="60" as="geometry" />
+        <mxCell id="W6BC3XzCuo4GsSZScxcd-18" value="1.　如果entrypoint有依赖其它的entrypoint（通过dependOn），要计算并设置此entrypoint的minAvailableModules。&lt;br&gt;2.　添加到&lt;span style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; background-color: initial;&quot;&gt;outdatedChunkGroupInfo中&lt;/span&gt;" style="whiteSpace=wrap;html=1;fontColor=default;labelBackgroundColor=none;align=left;spacing=20;" parent="W6BC3XzCuo4GsSZScxcd-3" vertex="1">
+          <mxGeometry x="10" y="30" width="300" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="W6BC3XzCuo4GsSZScxcd-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="wv2YPF_jsLJIBkKBlA4p-25" source="W6BC3XzCuo4GsSZScxcd-5" target="W6BC3XzCuo4GsSZScxcd-8">
+        <mxCell id="W6BC3XzCuo4GsSZScxcd-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="wv2YPF_jsLJIBkKBlA4p-25" source="W6BC3XzCuo4GsSZScxcd-5" target="W6BC3XzCuo4GsSZScxcd-8" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="W6BC3XzCuo4GsSZScxcd-5" value="processConnectQueue" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="wv2YPF_jsLJIBkKBlA4p-25">
+        <mxCell id="W6BC3XzCuo4GsSZScxcd-5" value="processConnectQueue" style="swimlane;whiteSpace=wrap;html=1;" parent="wv2YPF_jsLJIBkKBlA4p-25" vertex="1">
           <mxGeometry x="35" y="2620" width="343.75" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="W6BC3XzCuo4GsSZScxcd-17" value="计算异步chunk group的resultingAvailableModules以供下一步使用" style="whiteSpace=wrap;html=1;" vertex="1" parent="W6BC3XzCuo4GsSZScxcd-5">
-          <mxGeometry x="40" y="40" width="260" height="60" as="geometry" />
+        <mxCell id="W6BC3XzCuo4GsSZScxcd-17" value="&lt;span style=&quot;background-color: initial;&quot;&gt;1.　计算异步chunk group的resultingAvailableModules以供下一步使用&lt;br&gt;&lt;/span&gt;2.　如果此chunk group与它的父chunk group runtime不同则添加到outdatedChunkGroupInfo中" style="whiteSpace=wrap;html=1;spacing=20;align=left;" parent="W6BC3XzCuo4GsSZScxcd-5" vertex="1">
+          <mxGeometry x="10" y="30" width="320" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="W6BC3XzCuo4GsSZScxcd-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="wv2YPF_jsLJIBkKBlA4p-25" source="W6BC3XzCuo4GsSZScxcd-8" target="W6BC3XzCuo4GsSZScxcd-11">
+        <mxCell id="W6BC3XzCuo4GsSZScxcd-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="wv2YPF_jsLJIBkKBlA4p-25" source="W6BC3XzCuo4GsSZScxcd-8" target="W6BC3XzCuo4GsSZScxcd-11" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="W6BC3XzCuo4GsSZScxcd-8" value="processChunkGroupsForMerging" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="wv2YPF_jsLJIBkKBlA4p-25">
+        <mxCell id="W6BC3XzCuo4GsSZScxcd-8" value="processChunkGroupsForMerging" style="swimlane;whiteSpace=wrap;html=1;" parent="wv2YPF_jsLJIBkKBlA4p-25" vertex="1">
           <mxGeometry x="48.75" y="2790" width="317.5" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="W6BC3XzCuo4GsSZScxcd-20" value="计算异步chunk group的minAvailableModules" style="whiteSpace=wrap;html=1;" vertex="1" parent="W6BC3XzCuo4GsSZScxcd-8">
-          <mxGeometry x="28.75" y="40" width="260" height="60" as="geometry" />
+        <mxCell id="W6BC3XzCuo4GsSZScxcd-20" value="1.　计算异步chunk group的minAvailableModules&lt;br&gt;2.　如果minAvailableModules有变化则&lt;br&gt;添加到outdatedChunkGroupInfo中" style="whiteSpace=wrap;html=1;align=left;spacing=20;" parent="W6BC3XzCuo4GsSZScxcd-8" vertex="1">
+          <mxGeometry x="10" y="30" width="300" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="W6BC3XzCuo4GsSZScxcd-11" value="processOutdatedChunkGroupInfo" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="wv2YPF_jsLJIBkKBlA4p-25">
-          <mxGeometry x="48.75" y="2990" width="317.5" height="120" as="geometry" />
+        <mxCell id="GXbM8JGDoSrahXJrBX9j-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="wv2YPF_jsLJIBkKBlA4p-25" source="W6BC3XzCuo4GsSZScxcd-11" target="GXbM8JGDoSrahXJrBX9j-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="W6BC3XzCuo4GsSZScxcd-11" value="processOutdatedChunkGroupInfo" style="swimlane;whiteSpace=wrap;html=1;" parent="wv2YPF_jsLJIBkKBlA4p-25" vertex="1">
+          <mxGeometry x="46.25" y="2970" width="321.25" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="GXbM8JGDoSrahXJrBX9j-7" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=20;" vertex="1" parent="W6BC3XzCuo4GsSZScxcd-11">
+          <mxGeometry x="10" y="30" width="303.75" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="GXbM8JGDoSrahXJrBX9j-4" value="&lt;div style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;&lt;div&gt;//&amp;nbsp;异步blocks在所有同步blocks后处理&lt;/div&gt;&lt;div&gt;if (&lt;span style=&quot;&quot;&gt;queue&lt;/span&gt;.&lt;span style=&quot;&quot;&gt;length&lt;/span&gt; &lt;span style=&quot;&quot;&gt;===&lt;/span&gt; &lt;span style=&quot;&quot;&gt;0&lt;/span&gt;) {&lt;/div&gt;&lt;div&gt;      &lt;span style=&quot;&quot;&gt;const&lt;/span&gt; &lt;span style=&quot;&quot;&gt;tempQueue&lt;/span&gt; &lt;span style=&quot;&quot;&gt;=&lt;/span&gt; &lt;span style=&quot;&quot;&gt;queue&lt;/span&gt;;&lt;/div&gt;&lt;div&gt;      &lt;span style=&quot;&quot;&gt;queue&lt;/span&gt; &lt;span style=&quot;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;&quot;&gt;queueDelayed&lt;/span&gt;.&lt;span style=&quot;&quot;&gt;reverse&lt;/span&gt;();&lt;/div&gt;&lt;div&gt;      &lt;span style=&quot;&quot;&gt;queueDelayed&lt;/span&gt; &lt;span style=&quot;&quot;&gt;=&lt;/span&gt; &lt;span style=&quot;&quot;&gt;tempQueue&lt;/span&gt;;&lt;/div&gt;&lt;div&gt;    }&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=default;fontColor=default;labelBackgroundColor=none;align=left;spacingTop=0;spacing=20;" vertex="1" parent="wv2YPF_jsLJIBkKBlA4p-25">
+          <mxGeometry x="58.980000000000004" y="3140" width="297.03" height="150" as="geometry" />
         </mxCell>
         <mxCell id="wv2YPF_jsLJIBkKBlA4p-28" value="connectChunkGroups" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="655" y="5206" width="200" height="110" as="geometry" />
