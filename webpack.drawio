@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-02-13T15:35:30.295Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0" etag="VFYtvCRWWkx_7JSnUbmX" version="22.1.18" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-14T15:12:35.201Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0" etag="HnVDGHpQueDU4Wubj2SA" version="22.1.18" type="github">
   <diagram name="第 1 页" id="MVrE7ZpOwZZvy0ujSv35">
     <mxGraphModel dx="904" dy="617" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -629,13 +629,10 @@
           <mxGeometry x="356.01" y="450" width="363.99" height="180" as="geometry" />
         </mxCell>
         <mxCell id="wv2YPF_jsLJIBkKBlA4p-28" value="connectChunkGroups" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="655" y="5420" width="200" height="110" as="geometry" />
+          <mxGeometry x="596.25" y="5400" width="317.5" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="wv2YPF_jsLJIBkKBlA4p-29" value="dep" style="rounded=1;whiteSpace=wrap;html=1;" parent="wv2YPF_jsLJIBkKBlA4p-28" vertex="1">
-          <mxGeometry x="20" y="50" width="70" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="wv2YPF_jsLJIBkKBlA4p-30" value="dep" style="rounded=1;whiteSpace=wrap;html=1;" parent="wv2YPF_jsLJIBkKBlA4p-28" vertex="1">
-          <mxGeometry x="110" y="50" width="70" height="40" as="geometry" />
+        <mxCell id="GXbM8JGDoSrahXJrBX9j-17" value="1.　关联block与chunk group&lt;br&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;2.　关联child chunk group和parent chunk group&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;align=left;spacing=20;" vertex="1" parent="wv2YPF_jsLJIBkKBlA4p-28">
+          <mxGeometry x="7.5" y="30" width="302.5" height="70" as="geometry" />
         </mxCell>
         <mxCell id="wv2YPF_jsLJIBkKBlA4p-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="wv2YPF_jsLJIBkKBlA4p-25" target="wv2YPF_jsLJIBkKBlA4p-28" edge="1">
           <mxGeometry relative="1" as="geometry" />
