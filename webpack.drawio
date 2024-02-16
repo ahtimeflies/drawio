@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-02-14T15:12:35.201Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0" etag="HnVDGHpQueDU4Wubj2SA" version="22.1.18" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-16T14:49:15.329Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0" etag="_SRbCnx5Dz6lDP_mP3ab" version="23.1.4" type="github">
   <diagram name="第 1 页" id="MVrE7ZpOwZZvy0ujSv35">
-    <mxGraphModel dx="904" dy="617" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="859" dy="586" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -355,8 +355,13 @@
         <mxCell id="Hyx3UyOHCQJDbXDzl8Xv-283" value="&lt;div style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;modulesList&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="540" y="1420" width="100" height="40" as="geometry" />
         </mxCell>
+        <mxCell id="rPXtUbRvHYqUgIM3L1aE-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wv2YPF_jsLJIBkKBlA4p-13" target="rPXtUbRvHYqUgIM3L1aE-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="wv2YPF_jsLJIBkKBlA4p-13" value="buildChunkGraph" style="swimlane;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
-          <mxGeometry x="245" y="1610" width="1005" height="3720" as="geometry" />
+          <mxGeometry x="245" y="1610" width="1005" height="3920" as="geometry">
+            <mxRectangle x="245" y="1610" width="140" height="30" as="alternateBounds" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="wv2YPF_jsLJIBkKBlA4p-25" value="visitModules" style="swimlane;whiteSpace=wrap;html=1;align=center;fontColor=default;labelBackgroundColor=none;" parent="wv2YPF_jsLJIBkKBlA4p-13" vertex="1">
           <mxGeometry x="30" y="60" width="960" height="3660" as="geometry" />
@@ -602,40 +607,77 @@
         <mxCell id="W6BC3XzCuo4GsSZScxcd-20" value="1.　计算异步chunk group的minAvailableModules&lt;br&gt;2.　如果minAvailableModules有变化则&lt;br&gt;添加到outdatedChunkGroupInfo中" style="whiteSpace=wrap;html=1;align=left;spacing=20;" parent="W6BC3XzCuo4GsSZScxcd-8" vertex="1">
           <mxGeometry x="10" y="30" width="300" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="GXbM8JGDoSrahXJrBX9j-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="wv2YPF_jsLJIBkKBlA4p-25" source="W6BC3XzCuo4GsSZScxcd-11" target="GXbM8JGDoSrahXJrBX9j-4">
+        <mxCell id="GXbM8JGDoSrahXJrBX9j-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="wv2YPF_jsLJIBkKBlA4p-25" source="W6BC3XzCuo4GsSZScxcd-11" target="GXbM8JGDoSrahXJrBX9j-4" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="W6BC3XzCuo4GsSZScxcd-11" value="processOutdatedChunkGroupInfo" style="swimlane;whiteSpace=wrap;html=1;" parent="wv2YPF_jsLJIBkKBlA4p-25" vertex="1">
           <mxGeometry x="46.25" y="3190" width="321.25" height="240" as="geometry" />
         </mxCell>
-        <mxCell id="GXbM8JGDoSrahXJrBX9j-7" value="由于parent chunk&amp;nbsp;groups的变化（主要是minAvailableModules&lt;br&gt;），所以要评估这些chunk groups是否需要再次处理&lt;br&gt;1.　如果skippedItems中模块已不在minAvailableModules中，从skippedItems中删除&lt;span style=&quot;background-color: initial;&quot;&gt;，并重新处理此模块&lt;/span&gt;&lt;br&gt;2.　重新处理skippedModuleConnections中的模块？&lt;br&gt;3.　重新考虑此chunk group的children chunk groups（异步chunk groups）&lt;br&gt;4.　重新考虑此chunk groups的combining（有被其它entrypoints dependOn）" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=20;" vertex="1" parent="W6BC3XzCuo4GsSZScxcd-11">
+        <mxCell id="GXbM8JGDoSrahXJrBX9j-7" value="由于parent chunk&amp;nbsp;groups的变化（主要是minAvailableModules&lt;br&gt;），所以要评估这些chunk groups是否需要再次处理&lt;br&gt;1.　如果skippedItems中模块已不在minAvailableModules中，从skippedItems中删除&lt;span style=&quot;background-color: initial;&quot;&gt;，并重新处理此模块&lt;/span&gt;&lt;br&gt;2.　重新处理skippedModuleConnections中的模块？&lt;br&gt;3.　重新考虑此chunk group的children chunk groups（异步chunk groups）&lt;br&gt;4.　重新考虑此chunk groups的combining（有被其它entrypoints dependOn）" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=20;" parent="W6BC3XzCuo4GsSZScxcd-11" vertex="1">
           <mxGeometry x="10" y="30" width="303.75" height="200" as="geometry" />
         </mxCell>
-        <mxCell id="GXbM8JGDoSrahXJrBX9j-4" value="&lt;div style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;&lt;div&gt;//&amp;nbsp;异步blocks在所有同步blocks后处理&lt;/div&gt;&lt;div&gt;if (&lt;span style=&quot;&quot;&gt;queue&lt;/span&gt;.&lt;span style=&quot;&quot;&gt;length&lt;/span&gt; &lt;span style=&quot;&quot;&gt;===&lt;/span&gt; &lt;span style=&quot;&quot;&gt;0&lt;/span&gt;) {&lt;/div&gt;&lt;div&gt;      &lt;span style=&quot;&quot;&gt;const&lt;/span&gt; &lt;span style=&quot;&quot;&gt;tempQueue&lt;/span&gt; &lt;span style=&quot;&quot;&gt;=&lt;/span&gt; &lt;span style=&quot;&quot;&gt;queue&lt;/span&gt;;&lt;/div&gt;&lt;div&gt;      &lt;span style=&quot;&quot;&gt;queue&lt;/span&gt; &lt;span style=&quot;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;&quot;&gt;queueDelayed&lt;/span&gt;.&lt;span style=&quot;&quot;&gt;reverse&lt;/span&gt;();&lt;/div&gt;&lt;div&gt;      &lt;span style=&quot;&quot;&gt;queueDelayed&lt;/span&gt; &lt;span style=&quot;&quot;&gt;=&lt;/span&gt; &lt;span style=&quot;&quot;&gt;tempQueue&lt;/span&gt;;&lt;/div&gt;&lt;div&gt;    }&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=default;fontColor=default;labelBackgroundColor=none;align=left;spacingTop=0;spacing=20;" vertex="1" parent="wv2YPF_jsLJIBkKBlA4p-25">
+        <mxCell id="GXbM8JGDoSrahXJrBX9j-4" value="&lt;div style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;&lt;div&gt;//&amp;nbsp;异步blocks在所有同步blocks后处理&lt;/div&gt;&lt;div&gt;if (&lt;span style=&quot;&quot;&gt;queue&lt;/span&gt;.&lt;span style=&quot;&quot;&gt;length&lt;/span&gt; &lt;span style=&quot;&quot;&gt;===&lt;/span&gt; &lt;span style=&quot;&quot;&gt;0&lt;/span&gt;) {&lt;/div&gt;&lt;div&gt;      &lt;span style=&quot;&quot;&gt;const&lt;/span&gt; &lt;span style=&quot;&quot;&gt;tempQueue&lt;/span&gt; &lt;span style=&quot;&quot;&gt;=&lt;/span&gt; &lt;span style=&quot;&quot;&gt;queue&lt;/span&gt;;&lt;/div&gt;&lt;div&gt;      &lt;span style=&quot;&quot;&gt;queue&lt;/span&gt; &lt;span style=&quot;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;&quot;&gt;queueDelayed&lt;/span&gt;.&lt;span style=&quot;&quot;&gt;reverse&lt;/span&gt;();&lt;/div&gt;&lt;div&gt;      &lt;span style=&quot;&quot;&gt;queueDelayed&lt;/span&gt; &lt;span style=&quot;&quot;&gt;=&lt;/span&gt; &lt;span style=&quot;&quot;&gt;tempQueue&lt;/span&gt;;&lt;/div&gt;&lt;div&gt;    }&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=default;fontColor=default;labelBackgroundColor=none;align=left;spacingTop=0;spacing=20;" parent="wv2YPF_jsLJIBkKBlA4p-25" vertex="1">
           <mxGeometry x="58.99" y="3470" width="297.03" height="150" as="geometry" />
         </mxCell>
-        <mxCell id="GXbM8JGDoSrahXJrBX9j-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="wv2YPF_jsLJIBkKBlA4p-25" source="GXbM8JGDoSrahXJrBX9j-9" target="GXbM8JGDoSrahXJrBX9j-10">
+        <mxCell id="GXbM8JGDoSrahXJrBX9j-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="wv2YPF_jsLJIBkKBlA4p-25" source="GXbM8JGDoSrahXJrBX9j-9" target="GXbM8JGDoSrahXJrBX9j-10" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="GXbM8JGDoSrahXJrBX9j-12" value="有" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="GXbM8JGDoSrahXJrBX9j-11">
+        <mxCell id="GXbM8JGDoSrahXJrBX9j-12" value="有" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="GXbM8JGDoSrahXJrBX9j-11" vertex="1" connectable="0">
           <mxGeometry x="-0.3434" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="GXbM8JGDoSrahXJrBX9j-9" value="是否有parents&lt;br&gt;(dependOn)" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="wv2YPF_jsLJIBkKBlA4p-25">
+        <mxCell id="GXbM8JGDoSrahXJrBX9j-9" value="是否有parents&lt;br&gt;(dependOn)" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" parent="wv2YPF_jsLJIBkKBlA4p-25" vertex="1">
           <mxGeometry x="162" y="170" width="180" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="GXbM8JGDoSrahXJrBX9j-10" value="&lt;div style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;&lt;div&gt;//&amp;nbsp;有parents的话，需等待parents处理完成，所以先添加到chunkGroupsForCombining稍后处理&lt;span style=&quot;background-color: initial;&quot;&gt;，见processChunkGroupsForCombining&lt;/span&gt;&lt;/div&gt;&lt;div&gt;const &lt;span style=&quot;&quot;&gt;skippedItems&lt;/span&gt; &lt;span style=&quot;&quot;&gt;=&lt;/span&gt; &lt;span style=&quot;&quot;&gt;new&lt;/span&gt; &lt;span style=&quot;&quot;&gt;Set&lt;/span&gt;();&lt;/div&gt;&lt;div&gt;      &lt;span style=&quot;&quot;&gt;for&lt;/span&gt; (&lt;span style=&quot;&quot;&gt;const&lt;/span&gt; &lt;span style=&quot;&quot;&gt;module&lt;/span&gt; of &lt;span style=&quot;&quot;&gt;modules&lt;/span&gt;) {&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;        &lt;/span&gt;&lt;span style=&quot;&quot;&gt;skippedItems&lt;/span&gt;.&lt;span style=&quot;&quot;&gt;add&lt;/span&gt;(&lt;span style=&quot;&quot;&gt;module&lt;/span&gt;);&lt;/div&gt;&lt;div&gt;      }&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;      &lt;/span&gt;&lt;span style=&quot;&quot;&gt;chunkGroupInfo&lt;/span&gt;.&lt;span style=&quot;&quot;&gt;skippedItems&lt;/span&gt; &lt;span style=&quot;&quot;&gt;=&lt;/span&gt; &lt;span style=&quot;&quot;&gt;skippedItems&lt;/span&gt;;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;      &lt;/span&gt;&lt;span style=&quot;&quot;&gt;chunkGroupsForCombining&lt;/span&gt;.&lt;span style=&quot;&quot;&gt;add&lt;/span&gt;(&lt;span style=&quot;&quot;&gt;chunkGroupInfo&lt;/span&gt;);&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;fontColor=default;labelBackgroundColor=none;spacing=20;" vertex="1" parent="wv2YPF_jsLJIBkKBlA4p-25">
+        <mxCell id="GXbM8JGDoSrahXJrBX9j-10" value="&lt;div style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;&lt;div&gt;//&amp;nbsp;有parents的话，需等待parents处理完成，所以先添加到chunkGroupsForCombining稍后处理&lt;span style=&quot;background-color: initial;&quot;&gt;，见processChunkGroupsForCombining&lt;/span&gt;&lt;/div&gt;&lt;div&gt;const &lt;span style=&quot;&quot;&gt;skippedItems&lt;/span&gt; &lt;span style=&quot;&quot;&gt;=&lt;/span&gt; &lt;span style=&quot;&quot;&gt;new&lt;/span&gt; &lt;span style=&quot;&quot;&gt;Set&lt;/span&gt;();&lt;/div&gt;&lt;div&gt;      &lt;span style=&quot;&quot;&gt;for&lt;/span&gt; (&lt;span style=&quot;&quot;&gt;const&lt;/span&gt; &lt;span style=&quot;&quot;&gt;module&lt;/span&gt; of &lt;span style=&quot;&quot;&gt;modules&lt;/span&gt;) {&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;        &lt;/span&gt;&lt;span style=&quot;&quot;&gt;skippedItems&lt;/span&gt;.&lt;span style=&quot;&quot;&gt;add&lt;/span&gt;(&lt;span style=&quot;&quot;&gt;module&lt;/span&gt;);&lt;/div&gt;&lt;div&gt;      }&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;      &lt;/span&gt;&lt;span style=&quot;&quot;&gt;chunkGroupInfo&lt;/span&gt;.&lt;span style=&quot;&quot;&gt;skippedItems&lt;/span&gt; &lt;span style=&quot;&quot;&gt;=&lt;/span&gt; &lt;span style=&quot;&quot;&gt;skippedItems&lt;/span&gt;;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;      &lt;/span&gt;&lt;span style=&quot;&quot;&gt;chunkGroupsForCombining&lt;/span&gt;.&lt;span style=&quot;&quot;&gt;add&lt;/span&gt;(&lt;span style=&quot;&quot;&gt;chunkGroupInfo&lt;/span&gt;);&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;fontColor=default;labelBackgroundColor=none;spacing=20;" parent="wv2YPF_jsLJIBkKBlA4p-25" vertex="1">
           <mxGeometry x="356.01" y="450" width="363.99" height="180" as="geometry" />
         </mxCell>
         <mxCell id="wv2YPF_jsLJIBkKBlA4p-28" value="connectChunkGroups" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="596.25" y="5400" width="317.5" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="GXbM8JGDoSrahXJrBX9j-17" value="1.　关联block与chunk group&lt;br&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;2.　关联child chunk group和parent chunk group&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;align=left;spacing=20;" vertex="1" parent="wv2YPF_jsLJIBkKBlA4p-28">
+        <mxCell id="GXbM8JGDoSrahXJrBX9j-17" value="1.　关联block与chunk group&lt;br&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;2.　关联child chunk group和parent chunk group&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;align=left;spacing=20;" parent="wv2YPF_jsLJIBkKBlA4p-28" vertex="1">
           <mxGeometry x="7.5" y="30" width="302.5" height="70" as="geometry" />
         </mxCell>
         <mxCell id="wv2YPF_jsLJIBkKBlA4p-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="wv2YPF_jsLJIBkKBlA4p-25" target="wv2YPF_jsLJIBkKBlA4p-28" edge="1">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rPXtUbRvHYqUgIM3L1aE-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="rPXtUbRvHYqUgIM3L1aE-1" target="rPXtUbRvHYqUgIM3L1aE-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="850" y="5730" />
+              <mxPoint x="850" y="5630" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rPXtUbRvHYqUgIM3L1aE-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="rPXtUbRvHYqUgIM3L1aE-1" target="rPXtUbRvHYqUgIM3L1aE-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rPXtUbRvHYqUgIM3L1aE-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="rPXtUbRvHYqUgIM3L1aE-1" target="rPXtUbRvHYqUgIM3L1aE-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rPXtUbRvHYqUgIM3L1aE-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="rPXtUbRvHYqUgIM3L1aE-1" target="rPXtUbRvHYqUgIM3L1aE-15">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="850" y="5730" />
+              <mxPoint x="850" y="5830" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rPXtUbRvHYqUgIM3L1aE-1" value="&lt;div style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-weight: normal; line-height: 18px;&quot;&gt;optimizeChunks&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;startSize=23;fontColor=default;labelBackgroundColor=none;" vertex="1" parent="1">
+          <mxGeometry x="687.5" y="5700" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rPXtUbRvHYqUgIM3L1aE-8" value="&lt;div style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;//&amp;nbsp;把module移动到符合条件的chunk中&lt;/div&gt;&lt;div style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;EnsureChunkConditionsPlugin&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontColor=default;labelBackgroundColor=none;" vertex="1" parent="1">
+          <mxGeometry x="900" y="5590" width="270" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rPXtUbRvHYqUgIM3L1aE-10" value="&lt;div style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;//&amp;nbsp;把module移动到符合条件的chunk中&lt;/div&gt;&lt;div style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;EnsureChunkConditionsPlugin&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontColor=default;labelBackgroundColor=none;" vertex="1" parent="1">
+          <mxGeometry x="900" y="5660" width="270" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rPXtUbRvHYqUgIM3L1aE-14" value="&lt;div style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;//&amp;nbsp;合并重复的chunks&lt;/div&gt;&lt;div style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;MergeDuplicateChunksPlugin&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontColor=default;labelBackgroundColor=none;" vertex="1" parent="1">
+          <mxGeometry x="900" y="5730" width="270" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rPXtUbRvHYqUgIM3L1aE-15" value="&lt;div style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;//&amp;nbsp;拆包&lt;/div&gt;&lt;div style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;SplitChunksPlugin&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontColor=default;labelBackgroundColor=none;" vertex="1" parent="1">
+          <mxGeometry x="900" y="5800" width="270" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
