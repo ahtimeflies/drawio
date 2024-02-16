@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-02-16T14:49:15.329Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0" etag="_SRbCnx5Dz6lDP_mP3ab" version="23.1.4" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-16T14:52:53.247Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0" etag="MVuwtR540KpQrB0a2Ooh" version="23.1.4" type="github">
   <diagram name="第 1 页" id="MVrE7ZpOwZZvy0ujSv35">
     <mxGraphModel dx="859" dy="586" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -645,13 +645,18 @@
         <mxCell id="rPXtUbRvHYqUgIM3L1aE-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="rPXtUbRvHYqUgIM3L1aE-1" target="rPXtUbRvHYqUgIM3L1aE-8">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="850" y="5730" />
+              <mxPoint x="850" y="5760" />
               <mxPoint x="850" y="5630" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="rPXtUbRvHYqUgIM3L1aE-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="rPXtUbRvHYqUgIM3L1aE-1" target="rPXtUbRvHYqUgIM3L1aE-10">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="850" y="5760" />
+              <mxPoint x="850" y="5690" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="rPXtUbRvHYqUgIM3L1aE-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="rPXtUbRvHYqUgIM3L1aE-1" target="rPXtUbRvHYqUgIM3L1aE-14">
           <mxGeometry relative="1" as="geometry" />
@@ -659,13 +664,21 @@
         <mxCell id="rPXtUbRvHYqUgIM3L1aE-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="rPXtUbRvHYqUgIM3L1aE-1" target="rPXtUbRvHYqUgIM3L1aE-15">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="850" y="5730" />
+              <mxPoint x="850" y="5760" />
               <mxPoint x="850" y="5830" />
             </Array>
           </mxGeometry>
         </mxCell>
+        <mxCell id="rPXtUbRvHYqUgIM3L1aE-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="rPXtUbRvHYqUgIM3L1aE-1" target="rPXtUbRvHYqUgIM3L1aE-21">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="850" y="5760" />
+              <mxPoint x="850" y="5900" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
         <mxCell id="rPXtUbRvHYqUgIM3L1aE-1" value="&lt;div style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-weight: normal; line-height: 18px;&quot;&gt;optimizeChunks&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;startSize=23;fontColor=default;labelBackgroundColor=none;" vertex="1" parent="1">
-          <mxGeometry x="687.5" y="5700" width="120" height="60" as="geometry" />
+          <mxGeometry x="687.5" y="5730" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="rPXtUbRvHYqUgIM3L1aE-8" value="&lt;div style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;//&amp;nbsp;把module移动到符合条件的chunk中&lt;/div&gt;&lt;div style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;EnsureChunkConditionsPlugin&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontColor=default;labelBackgroundColor=none;" vertex="1" parent="1">
           <mxGeometry x="900" y="5590" width="270" height="60" as="geometry" />
@@ -678,6 +691,9 @@
         </mxCell>
         <mxCell id="rPXtUbRvHYqUgIM3L1aE-15" value="&lt;div style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;//&amp;nbsp;拆包&lt;/div&gt;&lt;div style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;SplitChunksPlugin&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontColor=default;labelBackgroundColor=none;" vertex="1" parent="1">
           <mxGeometry x="900" y="5800" width="270" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rPXtUbRvHYqUgIM3L1aE-21" value="&lt;div style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;//&amp;nbsp;删除空的chunks&lt;/div&gt;&lt;div style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;RemoveEmptyChunksPlugin&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontColor=default;labelBackgroundColor=none;" vertex="1" parent="1">
+          <mxGeometry x="900" y="5870" width="270" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
