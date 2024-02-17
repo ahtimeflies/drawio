@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-02-16T14:52:53.247Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0" etag="MVuwtR540KpQrB0a2Ooh" version="23.1.4" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-17T15:23:19.362Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0" etag="UQHO4K_dGwKi2Xrdk4yD" version="23.1.4" type="github">
   <diagram name="第 1 页" id="MVrE7ZpOwZZvy0ujSv35">
     <mxGraphModel dx="859" dy="586" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -355,7 +355,7 @@
         <mxCell id="Hyx3UyOHCQJDbXDzl8Xv-283" value="&lt;div style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;modulesList&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="540" y="1420" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="rPXtUbRvHYqUgIM3L1aE-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wv2YPF_jsLJIBkKBlA4p-13" target="rPXtUbRvHYqUgIM3L1aE-1">
+        <mxCell id="rPXtUbRvHYqUgIM3L1aE-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="wv2YPF_jsLJIBkKBlA4p-13" target="rPXtUbRvHYqUgIM3L1aE-1" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="wv2YPF_jsLJIBkKBlA4p-13" value="buildChunkGraph" style="swimlane;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
@@ -642,7 +642,7 @@
         <mxCell id="wv2YPF_jsLJIBkKBlA4p-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="wv2YPF_jsLJIBkKBlA4p-25" target="wv2YPF_jsLJIBkKBlA4p-28" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="rPXtUbRvHYqUgIM3L1aE-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="rPXtUbRvHYqUgIM3L1aE-1" target="rPXtUbRvHYqUgIM3L1aE-8">
+        <mxCell id="rPXtUbRvHYqUgIM3L1aE-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="rPXtUbRvHYqUgIM3L1aE-1" target="rPXtUbRvHYqUgIM3L1aE-8" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="850" y="5760" />
@@ -650,7 +650,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="rPXtUbRvHYqUgIM3L1aE-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="rPXtUbRvHYqUgIM3L1aE-1" target="rPXtUbRvHYqUgIM3L1aE-10">
+        <mxCell id="rPXtUbRvHYqUgIM3L1aE-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="rPXtUbRvHYqUgIM3L1aE-1" target="rPXtUbRvHYqUgIM3L1aE-10" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="850" y="5760" />
@@ -658,10 +658,10 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="rPXtUbRvHYqUgIM3L1aE-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="rPXtUbRvHYqUgIM3L1aE-1" target="rPXtUbRvHYqUgIM3L1aE-14">
+        <mxCell id="rPXtUbRvHYqUgIM3L1aE-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="rPXtUbRvHYqUgIM3L1aE-1" target="rPXtUbRvHYqUgIM3L1aE-14" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="rPXtUbRvHYqUgIM3L1aE-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="rPXtUbRvHYqUgIM3L1aE-1" target="rPXtUbRvHYqUgIM3L1aE-15">
+        <mxCell id="rPXtUbRvHYqUgIM3L1aE-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="rPXtUbRvHYqUgIM3L1aE-1" target="rPXtUbRvHYqUgIM3L1aE-15" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="850" y="5760" />
@@ -669,7 +669,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="rPXtUbRvHYqUgIM3L1aE-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="rPXtUbRvHYqUgIM3L1aE-1" target="rPXtUbRvHYqUgIM3L1aE-21">
+        <mxCell id="rPXtUbRvHYqUgIM3L1aE-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="rPXtUbRvHYqUgIM3L1aE-1" target="rPXtUbRvHYqUgIM3L1aE-21" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="850" y="5760" />
@@ -677,22 +677,22 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="rPXtUbRvHYqUgIM3L1aE-1" value="&lt;div style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-weight: normal; line-height: 18px;&quot;&gt;optimizeChunks&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;startSize=23;fontColor=default;labelBackgroundColor=none;" vertex="1" parent="1">
+        <mxCell id="rPXtUbRvHYqUgIM3L1aE-1" value="&lt;div style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-weight: normal; line-height: 18px;&quot;&gt;optimizeChunks&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;startSize=23;fontColor=default;labelBackgroundColor=none;" parent="1" vertex="1">
           <mxGeometry x="687.5" y="5730" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="rPXtUbRvHYqUgIM3L1aE-8" value="&lt;div style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;//&amp;nbsp;把module移动到符合条件的chunk中&lt;/div&gt;&lt;div style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;EnsureChunkConditionsPlugin&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontColor=default;labelBackgroundColor=none;" vertex="1" parent="1">
+        <mxCell id="rPXtUbRvHYqUgIM3L1aE-8" value="&lt;div style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;//&amp;nbsp;把module移动到符合条件的chunk中&lt;/div&gt;&lt;div style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;EnsureChunkConditionsPlugin&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontColor=default;labelBackgroundColor=none;" parent="1" vertex="1">
           <mxGeometry x="900" y="5590" width="270" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="rPXtUbRvHYqUgIM3L1aE-10" value="&lt;div style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;//&amp;nbsp;把module移动到符合条件的chunk中&lt;/div&gt;&lt;div style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;EnsureChunkConditionsPlugin&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontColor=default;labelBackgroundColor=none;" vertex="1" parent="1">
+        <mxCell id="rPXtUbRvHYqUgIM3L1aE-10" value="&lt;div style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;&lt;div style=&quot;border-color: var(--border-color); line-height: 18px;&quot;&gt;//&amp;nbsp;删除空的chunks&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color); line-height: 18px;&quot;&gt;RemoveEmptyChunksPlugin&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontColor=default;labelBackgroundColor=none;" parent="1" vertex="1">
           <mxGeometry x="900" y="5660" width="270" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="rPXtUbRvHYqUgIM3L1aE-14" value="&lt;div style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;//&amp;nbsp;合并重复的chunks&lt;/div&gt;&lt;div style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;MergeDuplicateChunksPlugin&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontColor=default;labelBackgroundColor=none;" vertex="1" parent="1">
+        <mxCell id="rPXtUbRvHYqUgIM3L1aE-14" value="&lt;div style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;//&amp;nbsp;合并重复的chunks&lt;/div&gt;&lt;div style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;MergeDuplicateChunksPlugin&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontColor=default;labelBackgroundColor=none;" parent="1" vertex="1">
           <mxGeometry x="900" y="5730" width="270" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="rPXtUbRvHYqUgIM3L1aE-15" value="&lt;div style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;//&amp;nbsp;拆包&lt;/div&gt;&lt;div style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;SplitChunksPlugin&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontColor=default;labelBackgroundColor=none;" vertex="1" parent="1">
+        <mxCell id="rPXtUbRvHYqUgIM3L1aE-15" value="&lt;div style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;//&amp;nbsp;拆包&lt;/div&gt;&lt;div style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;SplitChunksPlugin&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontColor=default;labelBackgroundColor=none;" parent="1" vertex="1">
           <mxGeometry x="900" y="5800" width="270" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="rPXtUbRvHYqUgIM3L1aE-21" value="&lt;div style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;//&amp;nbsp;删除空的chunks&lt;/div&gt;&lt;div style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;RemoveEmptyChunksPlugin&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontColor=default;labelBackgroundColor=none;" vertex="1" parent="1">
+        <mxCell id="rPXtUbRvHYqUgIM3L1aE-21" value="&lt;div style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;//&amp;nbsp;删除空的chunks&lt;/div&gt;&lt;div style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;RemoveEmptyChunksPlugin&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontColor=default;labelBackgroundColor=none;" parent="1" vertex="1">
           <mxGeometry x="900" y="5870" width="270" height="60" as="geometry" />
         </mxCell>
       </root>
